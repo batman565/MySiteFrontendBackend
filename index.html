@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <img src="https://avatars.mds.yandex.net/i?id=48638e15c594e48806f5ef7f8ca05d60_l-8263641-images-thumbs&n=13" alt="Не прогрузилось фото" height="70px" width="80px"/>
+        <div class="gruppa">
+            <p>ЭФБО-07-23</p>
+        <p>Дремов Михаил Игоревич</p>
+        </div>
+        </div>
+        <div class="header_box">
+            <ul class="uli">
+                <li class="list">
+                    <a href="index.html" class="custom-link">Главная</a>
+                </li>
+                <li class="list">
+                    <a href="1semestr.html" class="custom-link">Первый семестр</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="custom-link">Второй семестр</a>
+                </li>
+                <li class="list">
+                    <a href="main2.html" class="custom-link">Услуги</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="custom-link">Авторизация</a>
+                </li>
+            </ul>  
+        </div>
+        <style>
+            .container {
+        border: 5px solid indigo;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        padding: 10px; display:flex; justify-content: space-between;
+        }
+            .header_box{
+                border: 5px solid indigo;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                padding: 15px;
+            }
+            .uli{
+                list-style: none;
+                display: flex; flex-direction: row;
+            }
+            .list{
+                margin: 15px;
+                font-size: 20px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .gruppa{
+                font-size: 20px;
+                align-self: center;
+            }
+            .sidemenu{
+                display: flex;
+                flex-direction: column;
+                justify-content:baseline;
+            }
+            .uli2{
+                min-height: 100%;
+                height: 100%;
+                list-style: none;
+            }
+            .list2{
+                font-size: large;
+                margin:15px;
+                height: 5px;
+            }
+            .maininfo{
+                display: flex;flex-direction: row; 
+                justify-content: space-between;
+                margin-left: 10px;
+                border-left: 5px solid indigo;
+                padding: 10px;
+            }
+            .footerinfo{
+                display:flex; justify-content: center;
+                border: 5px solid indigo;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom: 0px;
+            }
+            .rightpic{
+               position: relative;
+               margin-right: 60px;
+               top: 20px;
+               left: 50px;
+                
+            }
+            .iconsocial:hover{
+                box-shadow: 8px 10px 5px 2px indigo;
+            }
+            .iconsocial{
+                width: 50%;
+                position: relative;
+                left: 380px;
+            }
+            .grid-container {
+                position:  relative; left: 17%; border: 5px solid indigo; border-radius: 20px; margin-bottom: 10px ;
+                display: grid;
+                grid-template: "i f d"
+                               "s s s";
+                gap: 10px;
+                padding: 10px
+                
+            }
+            .A { grid-area: f; }
+            .B { grid-area: i; }
+            .C { grid-area: d; }
+            .D { grid-area: s; }
+            .grid-item {
+                border: 0.1em solid #ddd;
+                padding: 1em;
+                border-radius: 0.7em;
+                text-align: center;
+                font-size: 1.3em;
+                cursor: pointer;
+                padding: 10px;
+            }
+            .grid-item:hover{
+                box-shadow: 1px 6px 1px 1px indigo;
+            }
+        .iconwatsup{
+            height: 40px; width: 40px; position: relative; left: 600px; top: 20px;
+        }
+        .iconvk{
+            height: 40px; width: 40px; position: relative; left: 500px; top: 20px;
+        }
+        .footerword{
+                font-size: large;margin-top: 30px; position: relative; left: 3%
+            }
+        .photo_profile{
+            height: 255px;
+            width: 255px;
+        }
+        .photo_profile:hover{
+            box-shadow: 8px 10px 5px 2px indigo;
+        }
+        .for_text_on_page{
+            font-size: large;
+        }
+        @media((min-width:850px) and (max-width:1450px)){
+            .sidemenu{
+                display: none;
+            }
+            .gruppa{
+                font-size: 28px;
+            }
+            .maininfo{
+                border-left: 0;
+                position: relative;
+                right: 10px;
+                overflow: hidden scroll;
+                height: 800px;
+            }
+            .space{
+                height: 20px;
+            }
+            .iconwatsup{
+                height: 40px; width: 40px; position: relative; left: 330px; top: 20px;
+            }
+            .iconvk{
+                height: 40px; width: 40px; position: relative; left: 230px; top: 20px;
+            }
+            .footerword{
+                font-size: 25px; position: relative; left: 3%; bottom: 10px;
+            }
+            .footerinfo{
+                height: 80px;
+            }
+            .uli{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 40px;
+            }
+            .custom-link{
+                font-size: 30px;
+            }
+            .list{
+                font-size: 28px;
+            }
+            .caveat-h1{
+                font-size: 70px;
+            }
+            .photo_profile{
+                height: 320px;
+                width: 320px;
+            }
+            .iconsocial{
+                height: 450px;
+                width: 450px;
+                margin-left: 0;
+                position: relative;
+                left: 270px;
+            }
+            .for_text_on_page{
+                font-size: 28px;
+            }
+            .grid-container{
+                position: relative;
+                left: 200px;
+            }
+        }
+        @media ((min-width:350px) and (max-width: 849px)){
+            .custom-link{
+                margin: 0px;
+                font-size: 18px;
+            }
+            .list{
+                margin: 5px;
+            }
+            .header_box{
+                height: 150%;
+                padding: 0px;
+            }
+            .uli{
+                flex-direction: column; text-align: center;
+                font-size: 30px;
+            }
+            .iconwatsup{
+                height: 20px; width: 20px; position: relative; left: 45px; top: 30px;
+            }
+            .iconvk{
+                height: 20px; width: 20px; position: relative; left: 55px; top: 30px;
+            }
+            .sidemenu{
+                display: none;
+            }
+            .maininfo{
+                border-left:0px ;
+                overflow: hidden scroll ;
+                height: 480px;
+                text-align: center;
+                justify-content: 0;
+                margin-left: 0;
+                padding: 0;
+                margin-left: 40px;
+            }
+            .rightpic{
+                position: relative;
+                right: 50px;
+            }
+            .space{
+                height: 20px;
+            }
+            .caveat-h1{
+                font-size: 50px;
+            }
+            .photo_profile{
+                position: relative;
+                right: 330px;
+                top: 170px;
+                float: left;
+            }
+            .space2{
+                height: 300px;
+            }
+            .iconsocial{
+                position: relative;
+                left: 5px;
+                height: 255px;
+                width: 255px;
+            }
+            .for_text_on_page{
+                font-size: 18px;
+            }
+            .grid-container{
+                position: relative;
+                left:6px;
+            }
+        }
+        </style>
+    </header>
+    <main style="min-height: 100%; display: flex; flex-direction: row;">
+        <div class="sidemenu">
+            <p class="caveat-h1" style="margin-top: 10px;
+                 margin-left: 15px; font-size: 27px;">Навигация по меню</p>
+                    <a href="#backend" class="custom-link" style="font-size:17px; margin-bottom: 5px;">Бэкенд</a>
+                    <a href="#frontend" class="custom-link" style="font-size: 17px;">Фронтенд</a>
+            
+        </div>
+        <div class="maininfo">
+            <div>
+            <h2 class="caveat-h1">Добро пожаловать на мой сайт!</h2><br><br>
+            <div class="space2"></div>
+            <p class="for_text_on_page">Меня зовут Дремов Михаил, я начинающий веб-разработчик!</p><br><br>
+            <h3 class="for_text_on_page">Фронтенд</h3><br>
+            <p class="for_text_on_page">Фронтенд (англ. frontend)&nbsp;&mdash; это область разработки ПО, которая фокусируется на&nbsp;создании пользовательского интерфейса и&nbsp;взаимодействии с&nbsp;пользователем. В&nbsp;основе фронтенда лежат языки <acronym title="HyperText Markup Language" lang="en">HTML</acronym>, <acronym title="Cascading Style Sheets" lang="en">CSS</acronym> и&nbsp;JavaScript, которые применяются для создания <nobr>веб-страниц</nobr>, их&nbsp;оформления и&nbsp;добавления интерактивности.</p><br><br>
+            <video class="iconsocial" style="margin-bottom: 50px; margin-top: 50px;border: 5px solid indigo;" controls> <source src="Rick Roll.mp4" type="video/mp4"></video>
+            <h3 class="for_text_on_page">Бэкенд</h3><br>
+            <p class="for_text_on_page"><a name="backend"></a>
+                Бэкенд (серверная сторона)&nbsp;&mdash; это <nobr>программно-аппаратная</nobr> часть системы, которую не&nbsp;видят пользователи. Они не&nbsp;знают о&nbsp;работе внутренних процессов и&nbsp;не&nbsp;могут на&nbsp;них влиять. Бэкенд находится на&nbsp;сервере&nbsp;&mdash; мощном компьютере, который отвечает за&nbsp;хранение данных и&nbsp;обработку поступающих запросов.
+            </p>
+            <video class="iconsocial" style=" margin-bottom: 30px; margin-top: 50px; border: 5px solid indigo;" controls> <source src="Rick Roll.mp4" type="video/mp4"></video>
+            <div class="grid-container">
+                <div class="grid-item B">JavaScript</div>
+                <div class="grid-item A">CSS</div>
+                <div class="grid-item C">HTML</div>
+                <div></div>
+                <div class="grid-item D">BootStrap</div>
+            </div>
+            <div class="space"></div>
+            </div>
+            <div class="rightpic">
+            <img class="photo_profile" src="cats1233.jpg"  style="border: 8px solid indigo;">
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footerinfo">
+        <p class="footerword">@Дремов Михаил Игоревич</p>
+        <img src="https://static.tildacdn.com/tild6236-3730-4964-b939-653335356163/av-939361-1490712407.png" class="iconwatsup">
+        <a href="https://vk.com/mbenzofu102"><img src="https://ds43.centerstart.ru/sites/ds43.centerstart.ru/files/archive/d9513c1e-3f9e-49cf-9adb-fa3eeabd670f.png" class="iconvk"></a>
+    </footer>
+</body>
+</html>

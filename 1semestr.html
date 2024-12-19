@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <img src="https://avatars.mds.yandex.net/i?id=48638e15c594e48806f5ef7f8ca05d60_l-8263641-images-thumbs&n=13" alt="Не прогрузилось фото" height="70px" width="80px"/>
+        <div class="gruppa">
+            <p>ЭФБО-07-23</p>
+        <p>Дремов Михаил Игоревич</p>
+        </div>
+        </div>
+        <div class="header_box">
+            <ul class="uli">
+                <li class="list">
+                    <a href="index.html" class="custom-link">Главная</a>
+                </li>
+                <li class="list">
+                    <a href="1semestr.html" class="custom-link">Первый семестр</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="custom-link">Второй семестр</a>
+                </li>
+                <li class="list">
+                    <a href="main2.html" class="custom-link">Услуги</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="custom-link">Авторизация</a>
+                </li>
+            </ul>  
+        </div>
+        <style>
+            .container {
+        border: 5px solid indigo;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        padding: 10px; display:flex; justify-content: space-between;
+        }
+            .header_box{
+                border: 5px solid indigo;
+                border-left: 0;
+                border-right: 0;
+                border-top: 5px;
+                padding: 15px;
+            }
+            .uli{
+                list-style: none;
+                display: flex; flex-direction: row;
+            }
+            .list{
+                margin: 15px;
+                font-size: 20px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .gruppa{
+                font-size: 20px;
+                align-self: center;
+            }
+            .sidemenu{
+                border: 5px solid indigo;
+                border-top: 0;
+                border-bottom: 0;
+                border-left: 0;
+                width: 200px;
+                height: 2030px;
+                display: flex;
+                flex-direction: column;
+                justify-content:baseline;
+            }
+            .uli2{
+                min-height: 100%;
+                height: 100%;
+                list-style: none;
+            }
+            .list2{
+                font-size: large;
+                margin:15px;
+                height: 5px;
+            }
+            .maininfo{
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+            .footerinfo{
+                display:flex; justify-content: center;
+                border: 5px solid indigo;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom: 0px;
+            }
+            .rightpic{
+                float:right;
+                margin-left: 170px;
+                margin-top: 30px;
+                margin-right: 50px;
+            }
+            .th{
+                border: 1px solid black;
+            }
+            .td{
+                border: 1px solid black;
+            }
+            .table{
+                border: 5px solid indigo;
+                width: 500px;
+                height: 100px;
+                border-collapse: collapse
+            }
+            .table:hover{
+                box-shadow: 8px 10px 5px 2px indigo;
+            }
+            .table2:hover{
+                box-shadow: 8px 10px 5px 2px indigo;
+            }
+            .iconsocial:hover{
+                box-shadow: 8px 10px 5px 2px indigo;
+            }
+            .yandexcarts{
+                margin-left: 320px; border: 7px solid indigo;
+                width: 500px;
+                height: 300px;
+            }
+            .pdfscont{
+                margin-left: 200px; border: 10px solid indigo;
+            }
+            .table2{
+                width: 1200px; height: 200px; margin-bottom: 10px;
+                border-collapse: collapse;
+                border: 5px solid indigo;
+            }
+            .iconwatsup{
+            height: 40px; width: 40px; position: relative; left: 600px; top: 20px;
+            }
+            .iconvk{
+            height: 40px; width: 40px; position: relative; left: 500px; top: 20px;
+            }
+            .footerword{
+                position: relative;
+                top: 25px;
+                left: 20px;
+            }
+            .pdfscont{
+                width: 800px;
+                height: 600px;
+            }
+            @media((min-width:850px) and (max-width:1450px)){
+            .caveat-h1{
+                 font-size: 60px;
+            }
+            .table{
+                width: 800px;
+                height: 280px;
+                font-size: 25px;
+            }
+                .sidemenu{
+                display: none;
+            }
+            .for_text_main{
+                font-size: 30px;
+
+            }
+            .footerword{
+                position: relative;
+                left: 40px;
+                top: 30px;
+                font-size: 25px;
+            }
+            .uli{
+                flex-direction: column; text-align: center;
+                font-size: 40px;
+            }
+            .gruppa{
+                font-size:28px;
+            }
+            .custom-link{
+                font-size: 30px;
+            }
+            .iconwatsup{
+                height: 40px; width: 40px; position: relative; left:270px; top: 25px;
+            }
+            .iconvk{
+                height: 40px; width: 40px; position: relative; left:300px; top: 25px;
+            }
+            .maininfo{
+                border-left:0px ;
+                overflow: hidden scroll ;
+                height: 480px;
+                justify-content: 0;
+                margin-left: 0;
+                padding: 0;
+                border-left: 0;
+                position: relative;
+                right: 10px;
+                height: 800px;
+                margin-left: 40px;
+            }
+            .yandexcarts{
+                margin-left: 130px;
+                width:700px; 
+                height:400px;
+            }
+            .space{
+                height: 20px;
+            }
+            .pdfscont{
+                margin-left: 70px;
+                height: 600px;
+                width: 800px;
+            }
+            .table2{
+                width: 950px;
+                font-size: 25px;
+            }
+            }
+            @media ((min-width:350px) and (max-width: 849px)){
+            .custom-link{
+                margin: 0px;
+                font-size: 18px;
+            }
+            .fortable{
+                overflow: scroll;
+                width: 350px;
+                border: 5px solid indigo;
+            }
+            .table2{
+                width: 150px;
+                font-size: 25px;
+                overflow-x: hidden scroll;
+                border: 0;
+
+            }
+            .table{
+                width: 800px;
+                height: 280px;
+                font-size: 25px;
+                border:0;
+            }
+            .sidemenu{
+                display: none;
+            }
+            .maininfo{
+                border-left:0px ;
+                overflow: hidden scroll ;
+                height: 480px;
+            }
+            .list{
+                margin: 5px;
+            }
+            .header_box{
+                height: 150%;
+                padding: 0px;
+            }
+            .uli{
+                flex-direction: column; text-align: center;
+                font-size: 30px;
+            }
+            .iconwatsup{
+                height: 20px; width: 20px; position: relative; left: 45px; top: 30px;
+            }
+            .iconvk{
+                height: 20px; width: 20px; position: relative; left: 55px; top: 30px;
+            }
+            .fortable2{
+                overflow: scroll;
+                width: 350px;
+                height: 250px;
+                border: 5px solid indigo;
+            }
+            .yandexcarts{
+                margin-left: 20px;
+                width: 330px;
+                height: 200px;
+            }
+            .caveat-h1{
+                font-size: 35px;
+            }
+            .space{
+                height: 20px;
+            }
+            .pdfscont{
+                margin-left: 10px;
+                width: 335px;
+                height: 200px;
+            }
+        }
+        </style>
+    </header>
+    <main style="min-height: 100%; display: flex; flex-direction: row;">
+        <div class="sidemenu">
+            <p class="caveat-h1" style="margin-top: 10px;
+                margin-left: 15px; font-size: 27px;">Навигация по меню</p>
+                    <a href="#lection" class="custom-link" style="font-size: 17px; margin-bottom: 5px;">Лекции</a>
+                    <a href="#prakt"  class="custom-link" style="font-size: 17px;margin-bottom: 5px;">Практики</a>
+                    <a href="#adres"  class="custom-link" style="font-size: 17px;margin-bottom: 5px;">Адрес вуза</a>
+                    <a href="#pdfe"  class="custom-link" style="font-size: 17px;">Рабочая программа</a>
+        </div>
+        <div class="maininfo">
+            <h4 class="caveat-h1">Первый семестр</h4><br><br>
+            <div>
+                <h3 class="for_text_main"><a name="lection"></a>Лекции</h3><br>
+                <div class="fortable">
+                <table class="table">
+                    <tr style="background-color: rgb(200, 0, 200);">
+                        <th style="text-align: left;">Номер</th>
+                        <th style="text-align: left;">Тема</th>
+                        <th style="text-align: left;">Посещение</th>
+                    </tr>
+                    <tr style="background-color: purple;">
+                        <td style="text-align: center;">1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">2</td>
+                        <td>Углубленное изучение HTML</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple;">
+                        <td style="text-align: center;">3</td>
+                        <td>Основы работы с CSS</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">4</td>
+                        <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple;">
+                        <td style="text-align: center;">5</td>
+                        <td>BootStrap - работа с фреймворком</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">6</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple;">
+                        <td style="text-align: center;">7</td>
+                        <td>Работа с DOM и событиями в JavaScript</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">8</td>
+                        <td>Введиние в GitHub и GitHub Pages</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </table>
+                </div>
+                <br><br><br>
+                <h3 class="for_text_main"><a name="prakt"></a>Практики</h3><br>
+                <div class="fortable2">
+                <table class="table2">
+                    <tr style="background-color:rgb(200, 0, 200);">
+                        <th style="text-align: left;">Номер</th>
+                        <th style="text-align: left;">Тема</th>
+                        <th style="text-align: left;">Посещение</th>
+                        <th style="text-align: left;">Выполнение</th>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">2</td>
+                        <td>Формы и кнопки HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">3</td>
+                        <td>Таблицы и интерактивные элементы HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">4</td>
+                        <td>Основы работы с CSS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">5</td>
+                        <td>Работа с классами в CSS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">6</td>
+                        <td>Работа с сетками и разметкой в HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">7</td>
+                        <td>Адаптивная верстка</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">8</td>
+                        <td>Boostrap</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">9</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">10</td>
+                        <td>Базовые задачи на JS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">11</td>
+                        <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">12</td>
+                        <td>Встраивание скриптов</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">13</td>
+                        <td>Отладка сценариев</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">14</td>
+                        <td>Анимации и работа с ними</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr style="background-color: purple">
+                        <td style="text-align: center;">15</td>
+                        <td>GitHub</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">16</td>
+                        <td>Защита проекта</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </table>
+                </div>
+                <br><br><br>
+                <h3 class="caveat-h1" style="text-align: center;"><a name="adres"></a>Занятия проходят по адресу: Г. Москва, проспект Вернадского, 78с4</h3><br><br>
+                <iframe class="yandexcarts" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e699721ae1aeaabcfe5e8abb198e131d150ca5a7839f07680bda06da9b59157&amp;source=constructor" frameborder="0">
+                </iframe><br><br><br><br>
+                <div>
+                <h3 class="caveat-h1" style="text-align: center;"><a name="pdfe"></a>Рабочая программа</h3>
+                <br>
+                <embed class="pdfscont" src="filelectros.pdf">
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footerinfo">
+        <p class="footerword">@Дремов Михаил Игоревич</p>
+        <img class="iconwatsup" src="https://static.tildacdn.com/tild6236-3730-4964-b939-653335356163/av-939361-1490712407.png">
+        <a href="https://vk.com/mbenzofu102"><img class="iconvk" src="https://ds43.centerstart.ru/sites/ds43.centerstart.ru/files/archive/d9513c1e-3f9e-49cf-9adb-fa3eeabd670f.png"></a>
+    </footer>
+</body>
+</html>

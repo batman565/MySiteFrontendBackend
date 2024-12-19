@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class = 'header_up'>
+        <div class="container">
+        <img src="https://avatars.mds.yandex.net/i?id=48638e15c594e48806f5ef7f8ca05d60_l-8263641-images-thumbs&n=13" alt="Не прогрузилось фото" height="70px" width="80px"/>
+        <div class="gruppa">
+            <p>ЭФБО-07-23</p>
+        <p>Дремов Михаил Игоревич</p>
+        </div>
+        </div>
+        <div class="header_box">
+            <ul class="uli">
+                <li class="list">
+                    <a href="index.html" class="custom-link">Главная</a>
+                </li>
+                <li class="list">
+                    <a href="1semestr.html" class="custom-link">Первый семестр</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="custom-link">Второй семестр</a>
+                </li>
+                <li class="list">
+                    <a href="main2.html" class="custom-link">Услуги</a>
+                </li>
+                <li class="list">
+                    <a href="#" class="custom-link">Авторизация</a>
+                </li>
+            </ul>  
+        </div>
+        <style>
+        .header_up{
+            border-top: 0;
+        }
+        .photos{
+            height: 150px;
+            width: 150px;
+        }
+            .container {
+        border: 5px solid indigo;
+        border-top: 0;
+        border-left:0;
+        border-right:0;
+        padding: 10px; display:flex; justify-content: space-between;
+        }
+            .header_box{
+                border: 5px solid indigo;
+                border-top: 0;
+                border-left: 0;
+                border-right:0;
+                padding: 10px;
+            }
+            .uli{
+                list-style: none;
+                display: flex; flex-direction: row;
+            }
+            .list{
+                margin: 15px;
+                font-size: 20px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .gruppa{
+                font-size: 20px;
+                align-self: center;
+            }
+            .sidemenu{
+                border: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content:baseline;
+                width: 20%;
+            }
+            .uli2{
+                min-height: 100%;
+                height: 100%;
+                list-style: none;
+            }
+            .list2{
+                font-size: large;
+                margin:15px;
+                height: 5px;
+            }
+            .maininfo{
+                margin-left: 10px;
+                border-left: 5px solid indigo;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+            .footerinfo{
+                display:flex; justify-content: center;
+                flex-direction: row;
+                border: 5px solid indigo;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom: 0px;
+            }
+            .rightpic{
+                float:right;
+                margin-left: 200px;
+                margin-top: 30px;
+                margin-right: 50px;
+            }
+            .forpicture{
+                display: flex; 
+                flex-direction: row;
+            }
+            .fortext{
+                text-align: left; margin-top: 300px; height: max-content;
+            }
+            .modal-bg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+        .modal {
+            border: 4px solid indigo;
+            height: 550px;
+            width: 500px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            z-index: 1001;
+        }
+        .close {
+            cursor: pointer;
+            color: red;
+            font-size: larger;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .openModal{
+            cursor: pointer;
+            background-color: indigo;
+            position: relative; left: 25%; color: white; width: 70px;
+        }
+        .openModal:hover{
+            box-shadow: 10px 2px 2px indigo;
+            background-color: rgb(196, 173, 216);
+        }
+        .openModal:active{
+            background-color: rgb(170, 23, 170);
+        }
+        .box-with-shadow {
+            margin-right: 45px; 
+            border: 5px solid indigo; 
+            height: 210px;
+            width: 150px;
+            position: relative;
+            left: 25%
+            
+        }
+        .iconwatsup{
+            height: 40px; width: 40px; position: relative; left: 600px; top: 20px;
+        }
+        .iconvk{
+            height: 40px; width: 40px; position: relative; left: 500px; top: 20px;
+        }
+        .footerword{
+            position: relative; top: 30px; margin-bottom: 50px; font-size: larger;
+        }
+        .box-with-shadow:hover {
+        box-shadow: 8px 10px 5px 2px indigo;
+        }
+        .iconsocial:hover{
+                        box-shadow: 8px 10px 5px 2px indigo;
+                    }
+        .for_text_main{
+            font-size: large;text-align: left;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .text_in_box{
+            font-size: 15px;
+        }
+        .modal{
+                height: 550px;
+                width: 450px;
+                font-size: 20px;
+                top: 350px;
+                right: 300px;
+            }
+            .fortextforma{
+                font-size: 16px;
+            }
+            .space{
+                height: 20px;
+            }
+            .open1Modal{
+                position: relative;
+                left: 175px;
+                top: 10px;
+                background-color: indigo;
+                color:white;
+                height: 40px;
+                width: 90px;
+                font-size: 15px;
+            }
+            .open1Modal:hover{
+                box-shadow: 8px 5px 5px 2px indigo;
+            }
+            .inputtext{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                margin-left: 22px;
+
+            }
+            .inputemail{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                margin-left: 50px;
+            }
+            .inputnumber{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                position: relative;
+                left: 102px;
+            }
+            .inputregion{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                position: relative;
+                left: 118px;
+            }
+            .inputdate{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                position: relative;
+                left: 135px;
+            }
+            .inputcomment{
+                width: 50%; height: 40px; border: 3px solid indigo;
+                position: relative;
+                left: 65px;
+            }
+        @media((min-width:850px) and (max-width:1450px)){
+            .forpicture{
+                flex-direction: row;
+                margin-bottom: 0px;
+                position: relative;
+                right: 170px;
+            }
+            .openModal{
+                position: relative;
+                left: 40px;
+                width: 150px;
+                height: 30px;
+                font-size: 20px;
+                margin: 10px;
+            }
+            .caveat-h1{
+                font-size: 70px;
+            }
+            .photos{
+                height: 250px;
+                width: 250px;
+            }
+            .box-with-shadow {
+                margin-bottom: 20px;
+                height: 100%;
+                width: 250px;
+                position: relative;
+                right: 180px;
+                align-content: center;
+            }
+            .text_in_box{
+                font-size: 23px;
+            }
+            .iconwatsup{
+                height: 40px; width: 40px; position: relative; left:270px; top: 25px;
+            }
+            .iconvk{
+                height: 40px; width: 40px; position: relative; left:300px; top: 25px;
+            }
+            .sidemenu{
+                display: none;
+            }
+            .maininfo{
+                border-left: 0;
+                position: relative;
+                right: 10px;
+                height: 830px;
+            }
+            .for_text_main{
+                font-size: 30px;
+            }
+            .footerword{
+                position: relative;
+                left: 40px;
+                top: 30px;
+                font-size: 25px;
+            }
+            .uli{
+                flex-direction: column; text-align: center;
+                font-size: 40px;
+            }
+            .gruppa{
+                font-size:28px;
+            }
+            .custom-link{
+                font-size: 30px;
+            }
+            .modal{
+                height: 800px;
+                width: 600px;
+                font-size: 25px;
+                top: 600px;
+            }
+            .fortextforma{
+                font-size: 25px;
+            }
+            .space{
+                height: 20px;
+            }
+            .open1Modal{
+                position: relative;
+                left: 230px;
+                font-size: 20px;
+                background-color: indigo;
+                color:white;
+                top: 20px;
+                height: 70px;
+                width: 150px;
+            }
+            .inputtext{
+                width: 350px; height: 40%; border: 3px solid indigo;
+                margin-left: 22px;
+                font-size: 25px;
+            }
+            .inputemail{
+                width: 350px; height: 40%; border: 3px solid indigo;
+                margin-left: 65px;
+                font-size: 25px;
+            }
+            .inputnumber{
+                width: 350px; height: 40%; border: 3px solid indigo;
+                position: relative;
+                left: 100px;
+                font-size: 25px;
+            }
+            .inputregion{
+                width: 350px; height: 40%; border: 3px solid indigo;
+                position: relative;
+                left: 125px;
+                font-size: 25px;
+            }
+            .inputdate{
+                width: 350px; height: 40%; border: 3px solid indigo;
+                position: relative;
+                left: 150px;
+                font-size: 25px;
+            }
+            .inputcomment{
+                font-size: 25px;
+                width: 350px; height: 60px; border: 3px solid indigo;
+                position: relative;
+                left: 40px;
+            }
+        }
+        @media ((min-width:350px) and (max-width: 900px)) {
+            .custom-link{
+                margin: 0px;
+                font-size: 18px;
+            }
+            .list{
+                margin: 5px;
+            }
+            .forpicture {
+                flex-direction: column;
+            }
+            .header_box{
+                height: 150%;
+                padding: 0px;
+            }
+            .box-with-shadow {
+                margin-bottom: 20px;
+            }
+            .uli{
+                flex-direction: column; text-align: center;
+                font-size: 30px;
+            }
+            .iconwatsup{
+                height: 20px; width: 20px; position: relative; left: 20px; top: 30px;
+            }
+            .iconvk{
+                height: 20px; width: 20px; position: relative; left: 40px; top: 30px;
+            }
+            .sidemenu{
+                display: none;
+            }
+            .maininfo{
+                border-left:0px ;
+                overflow: hidden scroll ;
+                height: 480px;
+            }
+            .modal{
+                height: 470px;
+                width: 250px;
+                font-size: 15px;
+                top: 400px;
+            }
+            .fortextforma{
+                font-size: 13px;
+            }
+            .space{
+                height: 20px;
+            }
+            .open1Modal{
+                position: relative;
+                left: 75px;
+                top: 10px;
+                background-color: indigo;
+                color:white;
+                height: 40px;
+                width: 90px;
+                font-size: 15px;
+            }
+            .inputtext{
+                width: 50%; height: 20%; border: 3px solid indigo;
+
+            }
+            .inputemail{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                margin-left: 45px;
+            }
+            .inputnumber{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                margin-left: 55px;
+                position: relative;
+                left: 0;
+            }
+            .inputregion{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                margin-left: 70px;
+                position: relative;
+                left: 0;
+            }
+            .inputdate{
+                width: 50%; height: 20%; border: 3px solid indigo;
+                margin-left: 85px;
+                position: relative;
+                left: 0;
+            }
+            .inputcomment{
+                width: 50%; height: 40px; border: 3px solid indigo;
+                position: relative;
+                left: 28px;
+            }
+        }
+        
+        </style>
+    </header>
+    <main style="min-height: 100%; display: flex; flex-direction: row;">
+        <div class="sidemenu">
+            <p class="caveat-h1" style="margin-top: 10px;
+                 margin-left: 15px; font-size: 25px;">Навигация по меню</p>
+                    <a href="#backend" class="custom-link" style="font-size:17px; margin-bottom: 5px;">Бэкенд</a>
+                    <a href="#frontend" class="custom-link" style="font-size: 17px;">Фронтенд</a>
+ 
+        </div>
+            <div class="maininfo">
+                <h2 class="caveat-h1">Разработка веб-приложений</h2>
+            <div class="forpicture" style="margin-top: 50px; height: max-content">
+                <div class="box-with-shadow">
+                    <div class="photos">
+                    <img class="photos" src="wewewe.png" alt="Визитная карточка">
+                    </div>
+                    <p class="text_in_box" style="text-align: center; border-top: 3px solid indigo;">Визитная карточка</p>
+                    <button class ="openModal">
+                        Заказать
+                    </button>
+                </div>
+                <div  class="box-with-shadow">
+                    <div>
+                    <img class="photos" src="https://avatars.mds.yandex.net/get-ydo/4450025/2a00000180b5b0bc5f010064ffc76c92a1c1/diploma">
+                    </div>
+                    <p class="text_in_box" style="text-align: center; border-top: 3px solid indigo;">Корпоративный сайт</p>
+                    <button class ="openModal">
+                        Заказать
+                    </button>
+                </div>
+                <div  class="box-with-shadow">
+                    <div class="photos">
+                    <img class="photos" src="https://sun9-45.userapi.com/impg/jovzxNnXDCf8M3GUfuAk5T1G2u8rRhPaMD5_PA/Yh2m74MiM4w.jpg?size=1280x853&quality=96&sign=2027027b0b30a9cb60d766f9782c3fd0&c_uniq_tag=vAETM_2ikRxmkO442SRjq8502OmRa8GXTmFZwFKb5GU&type=album" height="150px" width="150px">
+                    </div>
+                    <p class ="text_in_box"style="text-align: center; border-top: 3px solid indigo;">Интернет-магазин</p>
+                    <button class="openModal">
+                        Заказать
+                    </button>
+                </div>
+            </div>
+            <br><br> 
+            <div>
+                <p class="for_text_main">Разработка веб-приложений — это процесс создания интерактивных программ, которые работают в веб-браузере.
+                Веб-приложения могут быть простыми, как одностраничные сайты, или сложными, как социальные сети или интернет-магазины.</p>
+            </div>   
+            </div>
+    </main>
+    <footer class="footerinfo">
+        <p class="footerword">@Дремов Михаил Игоревич</p>
+        <img class="iconwatsup" src="https://static.tildacdn.com/tild6236-3730-4964-b939-653335356163/av-939361-1490712407.png">
+        <a href="https://vk.com/mbenzofu102"><img class="iconvk" src="https://ds43.centerstart.ru/sites/ds43.centerstart.ru/files/archive/d9513c1e-3f9e-49cf-9adb-fa3eeabd670f.png"></a>
+    </footer>
+    <form>
+    <div class="modal-bg" id="modalBg">
+        <div class="modal">
+            <span class="close" id="closeModal">x</span>
+            <h1>Разработка веб-приложения</h1>
+            <p>
+                Заполните эту форму и&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;вами в&nbsp;ближайшее время для уточнения деталей!
+            </p><br><br>
+            <div class="fortextforma">
+                <div style="display: flex; justify-content:space-between;">
+                    <label><b>Как вас зовут?</b></label>
+                    <input class="inputtext" type="text" placeholder="Например Иванов Иван Иванович" required><br><br>
+                </div>
+                <div style="display: flex; justify-content:space-between;">
+                    <label><b>Ваш E-mail</b></label>
+                    <input class="inputemail" type="email" placeholder="test@mail.ru" required><br><br>
+                </div>
+                <label><b>Телефон</b></label>
+                <input class="inputnumber" type="text" placeholder="+7 999 999 99 99" required><br><br>
+                <label><b>Страна</b></label>
+                <select class="inputregion"required>
+                    <option>Россия</option>
+                    <option>Казахстан</option>
+                </select><br><br>
+                <label><b>Дата</b></label>
+                <input class="inputdate"type="date" required><br><br>
+                <label><b>Комментарий</b></label>
+                <input class="inputcomment" type="text" placeholder="Ваш комментарий..."><br><br>
+                <input type="checkbox" required>
+                <label class="fortextforma">Я согласен на обработку данных.</label>
+            </div>
+            <div>
+                <button class="open1Modal" type="submit">Отправить Заявку</button>
+            </div>
+        </div>
+    </div>
+    <script>
+    const modalBg = document.getElementById('modalBg');
+    const closeModal = document.getElementById('closeModal');
+    const openModalButtons = document.querySelectorAll('.openModal');
+
+    
+    openModalButtons.forEach(button => {
+        button.onclick = function() {
+            modalBg.style.display = 'block';
+        }
+    });
+
+
+    closeModal.onclick = function() {
+        modalBg.style.display = 'none';
+    }
+
+
+    window.onclick = function(event) {
+        if (event.target == modalBg) {
+            modalBg.style.display = 'none';
+        }
+    }
+    form.onsubmit = function(event) {
+        event.preventDefault(); 
+
+        if (form.checkValidity()) {
+            successMessage.textContent = "Форма успешно отправлена!";
+            successMessage.style.display = 'block';
+            
+            form.reset();
+        }
+    }
+    </script>
+</body>
+</html>
